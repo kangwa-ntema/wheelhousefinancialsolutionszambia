@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import OurServicesPage from "./pages/OurServicesPage";
 import ContactUsPage from "./pages/ContactUsPage";
+import WhLogo from "../src/assets/images/wheelhouse-logo-design/wheelhouse-logo-website.png";
 import "./App.css";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <header className="primaryHeader">
         <nav className="primaryNavigation">
           <div className="primaryNavLogo">
-            <img src="../src/assets/images/wheelhouse-logo-design/wheelhouse-logo-website.png" alt="" />
+            <img src={WhLogo}/>
           </div>
           {/* <ul className="navList" role="list">
             <li className="navItem">

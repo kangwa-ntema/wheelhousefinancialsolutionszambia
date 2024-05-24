@@ -96,7 +96,7 @@
 .loanRequirementsAndInterestsContainer {
   max-width: var(--max-width-md);
   margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: 10rem 2rem;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -104,7 +104,7 @@
 .loanRequirementsInfo {
   display: flex;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   justify-content: center;
   gap: 3rem;
   text-align: left;
