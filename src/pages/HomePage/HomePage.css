@@ -38,6 +38,7 @@
 }
 
 .pageHeadingTitle {
+
 }
 
 .pageHeadingSubTitle {
@@ -59,6 +60,7 @@
 
 .loanInterestsTitle{
   font-size: 1em;
+  color: var(--clr-primary-500);
 }
 
 .loanInterests{
@@ -116,8 +118,8 @@
     gap: 20vw;
   }
 }
-.loanRequirementsInfo {
-
+.loanRequirementsTitle {
+  color: var(--clr-primary-500);
 }
 
 .docRequirements,
