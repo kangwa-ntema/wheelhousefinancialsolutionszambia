@@ -144,8 +144,8 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0.2rem;
-  padding: 15rem 0 0;
-  color: white;
+  padding: 20rem 0 0;
+  color: var(--clr-sec-700);
 }
 
 .getInTouchTitle{
@@ -162,13 +162,17 @@
 }
 
 .getInTouchDetails > a{
-  color: var(--clr-neutral-700);
+  color: var(--clr-sec-700);
   text-decoration: none;
 }
 
-.getInTouchInfo > a:hover{
-  text-decoration: underline;
+.officeGoogleLocation{
+  cursor: pointer;
+}
 
+.getInTouchDetails > a:hover,
+.officeGoogleLocation:hover{
+  text-decoration: underline;
 }
 .getInTouchInfoBG{
   background-image: linear-gradient(rgba(0, 0, 0, 0), black);

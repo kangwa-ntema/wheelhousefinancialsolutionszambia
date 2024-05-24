@@ -73,7 +73,7 @@ const HomePage = () => {
                 <a href="" mailto="enquiries.wheelhouse@gmail.com">
                   <p>enquiries.wheelhouse@gmail.com</p>
                 </a>
-                <p>5 Saise Road Stand B2, Longacres, Lusaka Zambia </p>
+                <p className="officeGoogleLocation">5 Saise Road Stand B2, Longacres, Lusaka Zambia </p>
                 <p className="phoneNumber"></p>
               </div>
             </div>
