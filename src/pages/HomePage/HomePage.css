@@ -53,10 +53,18 @@
 .loanInterestsInfo{
   align-self: center;
   padding: 2rem;
+  font-size: clamp(1em, 1.5vw, 2em);
+  max-width: 30rem;
+}
+
+.loanInterestsTitle{
+  font-size: 1em;
 }
 
 .loanInterests{
   padding: 0;
+  font-size: .7em;
+
 }
 
 .keyWordsContainer{
@@ -119,7 +127,7 @@
 
 .getInTouchContainer {
   max-width: var(--max-width-xl);
-  background-color: var(--clr-sec-700);
+  background-color: var(--clr-primary-blend-700-5);
   color: var(--clr-neutral-100);
 }
 
@@ -136,21 +144,35 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0.2rem;
-  padding: 20rem 1rem 2rem;
+  padding: 15rem 0 0;
+  color: white;
 }
 
 .getInTouchTitle{
   margin-bottom: 1rem;
+  font-size: 2.5em;
+  color: var(--clr-sec-600)
 }
 
-.getInTouchInfo > a{
-  color: var(--clr-neutral-100);
-  text-decoration: none;
-  margin-block: 1rem;
+.getInTouchDetails{
+  font-size: clamp(.9em, 1.3vw, 1.8em);
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
 }
+
+.getInTouchDetails > a{
+  color: var(--clr-neutral-700);
+  text-decoration: none;
+}
+
 .getInTouchInfo > a:hover{
   text-decoration: underline;
 
+}
+.getInTouchInfoBG{
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+  padding:3rem 1rem 1rem;
 }
 
 .getInTouchBG{
@@ -161,11 +183,16 @@
   .getInTouchInfoContainer {
     display: grid;
     justify-content: center;
-    gap: 10vw;
+    gap: 1rem;
     grid-template-columns: 50% 50%;
     align-items: center;
     margin: 0 auto;
   }
+
+.getInTouchInfoBG{
+  background-image:none;
+
+}
 
   .getInTouchBG {
     background-image: url("../../assets/images/lady-on-phone.png");
@@ -179,7 +206,7 @@
 
   .getInTouchInfo {
     background-image: none;
-    padding: 0;
+    padding: 1rem;
     text-align: left;
   }
 }

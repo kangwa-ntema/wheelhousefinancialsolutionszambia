@@ -64,16 +64,19 @@ const HomePage = () => {
         <div className="getInTouchInfoContainer">
           <div className="getInTouchBG"></div>
           <div className="getInTouchInfo">
-            <h1 className="getInTouchTitle">Get In Touch</h1>
-            <a href="" tel="+260771282955" className="phoneNumber">
-              +260 771 282 955
-            </a>
-            <a href="" mailto="enquiries.wheelhouse@gmail.com">
-
-            <p>enquiries.wheelhouse@gmail.com</p>
-            </a>
-            <p>5 Saise Road Stand B2, Longacres, Lusaka Zambia </p>
-            <p className="phoneNumber"></p>
+            <div className="getInTouchInfoBG">
+              <h1 className="getInTouchTitle">Get In Touch</h1>
+              <div className="getInTouchDetails">
+                <a href="" tel="+260771282955" className="phoneNumber">
+                  +260 771 282 955
+                </a>
+                <a href="" mailto="enquiries.wheelhouse@gmail.com">
+                  <p>enquiries.wheelhouse@gmail.com</p>
+                </a>
+                <p>5 Saise Road Stand B2, Longacres, Lusaka Zambia </p>
+                <p className="phoneNumber"></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
