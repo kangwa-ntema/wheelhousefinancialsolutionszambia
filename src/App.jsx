@@ -1,10 +1,12 @@
+import "./App.css";
+
 import { Link, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import OurServicesPage from "./pages/OurServicesPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import WhLogo from "../src/assets/images/wheelhouse-logo-design/wheelhouse-logo-website.png";
-import "./App.css";
+
 
 function App() {
   return (
@@ -14,28 +16,28 @@ function App() {
           <div className="primaryNavLogo">
             <img src={WhLogo}/>
           </div>
-          {/* <ul className="navList" role="list">
-            <li className="navItem">
+          <ul className="navList" role="list">
+            {/* <li className="navItem">
               <Link className="navLink" to="/">
                 Home
               </Link>
-            </li>
+            </li> */}
             <li className="navItem">
               <Link className="navLink" to="/AboutUsPage">
                 About
               </Link>
             </li>
-            <li className="navItem">
+            {/* <li className="navItem">
               <Link className="navLink" to="/OurServicesPage">
                 Services
               </Link>
-            </li>
+            </li> */}
             <li className="navItem">
               <Link className="navLink" to="/ContactUsPage">
                 Contact
               </Link>
             </li>
-          </ul> */}
+          </ul>
         </nav>
       </header>
       <main className="mainSection">
@@ -54,7 +56,7 @@ function App() {
           <div className="footerLogo"></div>
           <div>
 
-            <li className="socialLink"><a href="">Facebook</a></li>
+            <li className="socialLink"><a href="#">Facebook</a></li>
           </div>
           </ul>
           {/* <ul className="footerNavList" role="list">

@@ -238,6 +238,13 @@ html{
   --clr-sec-blend-600-9: hsl(222, 85%, 80%, .9);
   --clr-sec-blend-700-9: hsl(222, 85%, 95%, .9);
 
+  --clr-accent-100: hsl(345, 85%, 5%);
+  --clr-accent-200: hsl(345, 85%, 20%);
+  --clr-accent-300: hsl(345, 85%, 35%);
+  --clr-accent-400: hsl(345, 85%, 50%);
+  --clr-accent-500: hsl(345, 85%, 65%);
+  --clr-accent-600: hsl(345, 85%, 80%);
+  --clr-accent-700: hsl(345, 85%, 95%);
   
   --clr-accent-blend-100-1: hsl(345, 85%, 5%, .1);
   --clr-accent-blend-200-1: hsl(345, 85%, 20%, .1);

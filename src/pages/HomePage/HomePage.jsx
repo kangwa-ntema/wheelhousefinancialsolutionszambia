@@ -1,7 +1,12 @@
 import React from "react";
 import LoanCalculator from "../../Components/LoanCalculator/LoanCalculator";
 import "./HomePage.css";
-
+import CollateralImg1 from "../../assets/images/collateral-imgs/car-collateral-img.png";
+import CollateralImg2 from "../../assets/images/collateral-imgs/games-collateral-img.png";
+import CollateralImg3 from "../../assets/images/collateral-imgs/laptops-collateral-img.png";
+import CollateralImg4 from "../../assets/images/collateral-imgs/phone-collateral-img.png";
+import CollateralImg5 from "../../assets/images/collateral-imgs/tablet-collateral-img.png";
+import CollateralImg6 from "../../assets/images/collateral-imgs/tv-collateral-img.png";
 const HomePage = () => {
   return (
     <section className="homePageSection">
@@ -32,9 +37,9 @@ const HomePage = () => {
 
       <div className="keyWordsContainer">
         <ul role="list" className="keyWordsList">
-          <li className="keyword">Transparency</li>
-          <li className="keyword">Customer Care</li>
-          <li className="keyword">Fast Service</li>
+          <li className="keyword">Customer Oriented</li>
+          <li className="keyword">Trustworthiness</li>
+          <li className="keyword">Innovation</li>
         </ul>
       </div>
       {/* <LoanCalculator /> */}
@@ -42,21 +47,41 @@ const HomePage = () => {
         <div className="loanRequirementsSubSection">
           <h3 className="loanRequirementsTitle">Acceptable Collateral</h3>
           <ul role="list" className="collateralRequirements">
-            <li className="collateralRequirement">Laptops</li>
-            <li className="collateralRequirement">Phones</li>
-            <li className="collateralRequirement">Tablets</li>
-            <li className="collateralRequirement">TVs</li>
-            <li className="collateralRequirement">Video Games</li>
-            <li className="collateralRequirement">Title Deeds</li>
-            <li className="collateralRequirement">Vehicles</li>
+            <li className="collateralRequirement">- Laptops</li>
+            <li className="collateralRequirement">- Phones</li>
+            <li className="collateralRequirement">- Tablets</li>
+            <li className="collateralRequirement">- TVs</li>
+            <li className="collateralRequirement">- Video Games</li>
+            <li className="collateralRequirement">- Title Deeds</li>
+            <li className="collateralRequirement">- Vehicles</li>
           </ul>
         </div>
         <div className="loanRequirementsSubSection">
           <h3 className="loanRequirementsTitle">Requirements</h3>
           <ul role="list" className="docRequirements">
-            <li className="docRequirement">Copy of NRC</li>
-            <li className="docRequirement">Collateral</li>
+            <li className="docRequirement">- Copy of NRC</li>
+            <li className="docRequirement">- Collateral</li>
           </ul>
+        </div>
+        <div className="acceptableCollateralImages">
+          <div className="acceptableCollateralImage one">
+            <img src={CollateralImg1} alt="" />
+          </div>
+          <div className="acceptableCollateralImage two">
+            <img src={CollateralImg2} alt="" />
+          </div>
+          <div className="acceptableCollateralImage three">
+            <img src={CollateralImg3} alt="" />
+          </div>
+    <div className="acceptableCollateralImage four">
+            <img src={CollateralImg4} alt="" />
+          </div> 
+          <div className="acceptableCollateralImage five">
+            <img src={CollateralImg5} alt="" />
+          </div>
+          <div className="acceptableCollateralImage six">
+            <img src={CollateralImg6} alt="" />
+          </div>
         </div>
       </div>
 
@@ -73,7 +98,9 @@ const HomePage = () => {
                 <a href="" mailto="enquiries.wheelhouse@gmail.com">
                   <p>enquiries.wheelhouse@gmail.com</p>
                 </a>
-                <p className="officeGoogleLocation">5 Saise Road Stand B2, Longacres, Lusaka Zambia </p>
+                <p className="officeGoogleLocation">
+                  5 Saise Road Stand B2, Longacres, Lusaka Zambia{" "}
+                </p>
                 <p className="phoneNumber"></p>
               </div>
             </div>

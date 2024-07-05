@@ -1,3 +1,11 @@
+
+.app{
+  background-image: url("assets/images/textures/photo-1533135091724-62cc5402aa20.jpeg");
+  background-color: var(--clr-primary-100);
+  background-blend-mode: hard-light;
+  background-repeat: repeat;
+}
+
 .primaryHeader{
   max-width: var(--max-width-xl);
 }
@@ -27,7 +35,7 @@
 
 .mainSection{
   max-width: var(--max-width-xl);
-  background-color: var(--clr-neutral-blend-200-5);
+  background-color: var(--clr-primary-blend-200-5);
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
@@ -48,7 +56,7 @@
 }
 
 .footerNavigation{
-/*   max-width: var(--max-width-lg);
+/*   max-width: var(--max-width-xl);
   margin: 0 auto;
   display: flex;
   align-items: center;
