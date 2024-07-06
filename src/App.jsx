@@ -22,21 +22,23 @@ function App() {
                 Home
               </Link>
             </li> */}
+            {/*
             <li className="navItem">
               <Link className="navLink" to="/AboutUsPage">
                 About
               </Link>
             </li>
-            {/* <li className="navItem">
+             <li className="navItem">
               <Link className="navLink" to="/OurServicesPage">
                 Services
               </Link>
-            </li> */}
+            </li> 
             <li className="navItem">
               <Link className="navLink" to="/ContactUsPage">
                 Contact
               </Link>
             </li>
+              */}
           </ul>
         </nav>
       </header>
