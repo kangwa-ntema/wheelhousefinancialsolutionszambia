@@ -93,7 +93,7 @@ const HomePage = () => {
             <div className="getInTouchInfoBG">
               <h1 className="getInTouchTitle">Get In Touch</h1>
               <div className="getInTouchDetails">
-                <a href="" tel="+260771282955" className="phoneNumber">
+                <a href="tel:+260771282955"  className="phoneNumber">
                   +260 771 282 955
                 </a>
                 <a href="" mailto="enquiries.wheelhouse@gmail.com">
