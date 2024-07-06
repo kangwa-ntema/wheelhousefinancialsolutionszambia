@@ -8,6 +8,11 @@ import CollateralImg3 from "../../assets/images/collateral-imgs/laptops-collater
 import CollateralImg4 from "../../assets/images/collateral-imgs/phone-collateral-img.png";
 import CollateralImg5 from "../../assets/images/collateral-imgs/tablet-collateral-img.png";
 import CollateralImg6 from "../../assets/images/collateral-imgs/tv-collateral-img.png";
+
+/* ICONS */
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+
 const HomePage = () => {
   return (
     <section className="homePageSection">
@@ -93,12 +98,16 @@ const HomePage = () => {
             <div className="getInTouchInfoBG">
               <h1 className="getInTouchTitle">Get In Touch</h1>
               <div className="getInTouchDetails">
-                <a href="tel:+260771282955"  className="phoneNumber">
-                  +260 771 282 955
-                </a>
-                <a href="" mailto="enquiries.wheelhouse@gmail.com">
-                  <p>enquiries.wheelhouse@gmail.com</p>
-                </a>
+                <div className="phoneNumber">
+                  <FaPhone className="phoneIcon" />
+                  <a href="tel:+260771282955">+260 771 282 955</a>
+                </div>
+                <div className="email">
+                  <MdEmail className="emailIcon" />
+                  <a href="mailto:enquiries.wheelhouse@gmail.com">
+                    enquiries.wheelhouse@gmail.com
+                  </a>
+                </div>
 
                 <p className="phoneNumber"></p>
               </div>
