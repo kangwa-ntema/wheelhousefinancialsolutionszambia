@@ -75,9 +75,9 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   margin: 0;
   padding: 1rem;
+
 }
 
 .footerSocialList .footerSocialLink a {
@@ -89,7 +89,7 @@
   display: flex;
   padding: 4rem 1rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .socialLinkIcon {
@@ -98,7 +98,7 @@
   transition: border-bottom ease-in 0.2s;
   padding-bottom: 0.3rem;
   border-bottom: 0.2rem solid transparent;
-
+  margin: auto;
 }
 
 .socialLinkIcon:hover,
@@ -154,6 +154,14 @@
   .footerNavigation{
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+  justify-content: space-between;
+    
+  }
+
+.footerSocialList {
+  flex-direction: column;
+}
+
+  .footerGetInTouchDetails{
   }
 }

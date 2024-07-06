@@ -61,8 +61,8 @@ function App() {
       </main>
       <footer className="footer">
         <nav className="footerNavigation">
-          <div className="footerLogo"></div>
           <ul role="list" className="footerSocialList">
+          <div className="footerLogo"></div>
             <li className="footerSocialLink">
               <a href="https://www.facebook.com/wheelhousezm?mibextid=ZbWkwL">
                 <FaFacebookSquare className="socialLinkIcon" />
