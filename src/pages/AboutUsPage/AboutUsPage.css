@@ -1,0 +1,30 @@
+.aboutUsHeadingContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 12rem 1rem 2rem;
+    background-color: var(--clr-primary-700);
+    /*   background-image: url("../../assets/images/textures/photo-1533135091724-62cc5402aa20.jpeg");
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    display: flex;
+    gap: 2rem;
+    text-align: left;
+    color: var(--clr-primary-100);
+  }
+
+  .AboutUsHeadingTitle{
+    text-align: center;
+    font-size: clamp(2em, 5vw, 7em);
+  }
+
+  .aboutUsArticle{
+    text-align: center;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .aboutUsArticle p{
+    margin-block: 1rem;
+  }

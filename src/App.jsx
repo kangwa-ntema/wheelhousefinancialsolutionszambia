@@ -2,13 +2,15 @@ import "./App.css";
 
 import { Link, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
-import AboutUsPage from "./pages/AboutUsPage";
+import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import OurServicesPage from "./pages/OurServicesPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import WhLogo from "../src/assets/images/wheelhouse-logo-design/wheelhouse-logo-website.png";
 
 /* ICONS */
 import { FaFacebookSquare } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 function App() {
   return (
@@ -16,20 +18,23 @@ function App() {
       <header className="primaryHeader">
         <nav className="primaryNavigation">
           <div className="primaryNavLogo">
-            <img src={WhLogo} />
+            <Link className="navLink" to="/">
+              <img src={WhLogo} />
+            </Link>
           </div>
           <ul className="navList" role="list">
+            <li className="navItem">
+              <Link className="navLink" to="/AboutUsPage">
+                About
+              </Link>
+            </li>
             {/* <li className="navItem">
               <Link className="navLink" to="/">
                 Home
               </Link>
             </li> */}
             {/*
-            <li className="navItem">
-              <Link className="navLink" to="/AboutUsPage">
-                About
-              </Link>
-            </li>
+            
              <li className="navItem">
               <Link className="navLink" to="/OurServicesPage">
                 Services
@@ -56,14 +61,30 @@ function App() {
       </main>
       <footer className="footer">
         <nav className="footerNavigation">
-            <div className="footerLogo"></div>
+          <div className="footerLogo"></div>
           <ul role="list" className="footerSocialList">
-              <li className="footerSocialLink">
-                <a href="https://www.facebook.com/wheelhousezm?mibextid=ZbWkwL">
-                  <FaFacebookSquare className="socialLinkIcon" />
-                </a>
-              </li>
+            <li className="footerSocialLink">
+              <a href="https://www.facebook.com/wheelhousezm?mibextid=ZbWkwL">
+                <FaFacebookSquare className="socialLinkIcon" />
+              </a>
+            </li>
           </ul>
+          <div className="footerGetInTouchDetails">
+                <div className="footerPhoneNumber">
+                  <a href="tel:+260771282955">
+                    <FaPhone className="footerPhoneIcon" />
+                    <span className="iconSeparator">|</span>
+                    +260 771 282 955
+                  </a>
+                </div>
+                <div className="footerEmail">
+                  <a href="mailto:enquiries.wheelhouse@gmail.com">
+                    <MdEmail className="footerEmailIcon" />
+                    <span className="iconSeparator">|</span>
+                    enquiries.wheelhouse
+                  </a>
+                </div>
+              </div>
           {/* <ul className="footerNavList" role="list">
             <li className="footerNavItem">
               <Link className="footerNavLink" to="/">

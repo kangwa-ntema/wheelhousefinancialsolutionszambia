@@ -15,7 +15,7 @@
   max-width: var(--max-width-xl);
   right: 0;
   left: 0;
-  top:0;
+  top: 0;
   margin: 0 auto;
   position: fixed;
   padding: 1rem;
@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 500;
-  box-shadow: .1rem .1rem .7rem .2rem var(--clr-neutral-blend-100-5);
+  box-shadow: 0.1rem 0.1rem 0.7rem 0.2rem var(--clr-neutral-blend-100-5);
 }
 
 .primaryNavLogo {
@@ -39,8 +39,9 @@
 .navLink {
   text-decoration: none;
   color: var(--clr-primary-400);
-  transition: border-bottom ease-in 0.1s;
-  padding-bottom: 0.1rem;
+  transition: border-bottom ease-in 0.2s;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid transparent;
 }
 
 .navLink:hover,
@@ -81,26 +82,86 @@
 }
 
 .footerSocialList .footerSocialLink a {
-  text-decoration: none;
+  font-size: 2rem;
   color: var(--clr-neutral-400);
 }
 
-
-
-.footerNavigation{
+.footerNavigation {
   display: flex;
   padding: 2rem 1rem;
   align-items: center;
 }
 
-.socialLinkIcon{
+.socialLinkIcon {
   width: 2rem;
   color: var(--clr-primary-400);
-  transition: border-bottom ease-in 0.1s;
+  transition: border-bottom ease-in 0.2s;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid transparent;
+
 }
 
-.socialLinkIcon:hover{
+.socialLinkIcon:hover,
+.socialLinkIcon:focus {
   border-bottom: 0.2rem solid var(--clr-primary-400);
 }
 
+.footerGetInTouchDetails {
+  font-size: clamp(1em, 1.3vw, 1.8em);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  margin-left: auto;
+}
 
+.footerGetInTouchDetails a {
+  display: flex;
+  align-items: center;
+  color: var(--clr-primary-400);
+}
+
+.footerGetInTouchDetails a span {
+  margin-right: 1rem;
+}
+
+.footerPhoneNumber > a {
+  text-decoration: none;
+  color: var(--clr-primary-400);
+  transition: border-bottom ease-in 0.2s;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid transparent;
+  align-self: center;
+}
+
+.footerPhoneNumber > a:hover {
+  border-bottom: 0.2rem solid var(--clr-primary-400);
+}
+
+.footerPhoneIcon {
+  margin-right: 1rem;
+  color: var(--clr-primary-400);
+}
+
+.footerEmail {
+  display: flex;
+  align-items: center;
+}
+
+.footerEmailIcon {
+  margin-right: 1rem;
+  color: var(--clr-primary-400);
+}
+
+.footerEmail > a {
+  text-decoration: none;
+  color: var(--clr-primary-400);
+  transition: border-bottom ease-in 0.2s;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid transparent;
+  align-self: center;
+}
+
+.footerEmail > a:hover {
+  border-bottom: 0.2rem solid var(--clr-primary-400);
+}

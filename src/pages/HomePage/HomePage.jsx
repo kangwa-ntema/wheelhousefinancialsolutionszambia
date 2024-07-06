@@ -99,17 +99,19 @@ const HomePage = () => {
               <h1 className="getInTouchTitle">Get In Touch</h1>
               <div className="getInTouchDetails">
                 <div className="phoneNumber">
-                  <FaPhone className="phoneIcon" />
-                  <a href="tel:+260771282955">+260 771 282 955</a>
-                </div>
-                <div className="email">
-                  <MdEmail className="emailIcon" />
-                  <a href="mailto:enquiries.wheelhouse@gmail.com">
-                    enquiries.wheelhouse@gmail.com
+                  <a href="tel:+260771282955">
+                    <FaPhone className="phoneIcon" />
+                    <span className="iconSeparator">|</span>
+                    +260 771 282 955
                   </a>
                 </div>
-
-                <p className="phoneNumber"></p>
+                <div className="email">
+                  <a href="mailto:enquiries.wheelhouse@gmail.com">
+                    <MdEmail className="emailIcon" />
+                    <span className="iconSeparator">|</span>
+                    enquiries.wheelhouse
+                  </a>
+                </div>
               </div>
             </div>
           </div>
