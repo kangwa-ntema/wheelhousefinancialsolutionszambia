@@ -217,34 +217,54 @@
   background-position: center;
   border-radius: 0.2rem;
   padding: 20rem 0 0;
-  color: var(--clr-sec-700);
+  color: var(--clr-primary-700);
 }
 
 .getInTouchTitle {
   margin-bottom: 1rem;
-  font-size: 2.5em;
-  color: var(--clr-sec-600);
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--clr-primary-400);
 }
 
 .getInTouchDetails {
-  font-size: clamp(0.9em, 1.3vw, 1.8em);
+  font-size: clamp(1em, 1.3vw, 1.8em);
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
 }
 
 .getInTouchDetails > a {
-  color: var(--clr-sec-600);
+  color: var(--clr-primary-600);
   text-decoration: none;
 }
 
-.officeGoogleLocation {
-  cursor: pointer;
-  color: var(--clr-sec-600);
+.map-location{
+  padding: 1rem;
+  margin: 2rem 0 0;
+  max-width: 50rem;
+  text-align: left;
 }
 
-.getInTouchDetails > a:hover,
-.officeGoogleLocation:hover {
+.officeGoogleMap{
+  padding: 1rem;
+  background-color: var(--clr-neutral-700);
+}
+
+.officeGoogleMap iframe{
+  width: 100%;
+  min-height: 20rem;
+  border: .1rem solid var(--clr-neutral-100);
+}
+
+.officeGoogleLocation {
+  margin: 1rem;
+  cursor: pointer;
+  color: var(--clr-primary-100);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.getInTouchDetails > a:hover{
   text-decoration: underline;
 }
 .getInTouchInfoBG {
@@ -256,15 +276,15 @@
   background-image: none;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 550px) {
   .getInTouchInfoContainer {
     display: grid;
     justify-content: center;
     gap: 1rem;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     align-items: center;
     margin: 0 auto;
-    color: var(--clr-sec-700);
+    color: var(--clr-primary-400);
   }
 
   .getInTouchInfoBG {
@@ -277,14 +297,14 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 0.2rem;
-    padding: 10rem;
+    padding: 10rem 5rem;
     margin-left: 1rem;
   }
 
   .getInTouchTitle,
   .getInTouchDetails > a,
   .officeGoogleLocation {
-    color: var(--clr-sec-400);
+    color: var(--clr-primary-100);
   }
 
   .getInTouchInfo {

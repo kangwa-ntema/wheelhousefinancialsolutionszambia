@@ -1,39 +1,54 @@
-
-.app{
+.app {
   background-image: url("assets/images/textures/photo-1533135091724-62cc5402aa20.jpeg");
   background-color: var(--clr-primary-100);
   background-blend-mode: hard-light;
   background-repeat: repeat;
+  position: relative;
 }
 
-.primaryHeader{
+.primaryHeader {
   max-width: var(--max-width-xl);
 }
 
-.primaryNavigation{
+.primaryNavigation {
   background-color: rgba(0, 0, 0, 0.881);
   max-width: var(--max-width-xl);
   right: 0;
   left: 0;
+  top:0;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 500;
+  box-shadow: .1rem .1rem .7rem .2rem var(--clr-neutral-blend-100-5);
 }
 
-.primaryNavLogo{
-  max-width: 15rem;
+.primaryNavLogo {
+  max-width: 10rem;
   margin-top: 1rem;
 }
 
-.navList{
+.navList {
   display: flex;
   gap: 1rem;
 }
 
-.mainSection{
+.navLink {
+  text-decoration: none;
+  color: var(--clr-primary-400);
+  transition: border-bottom ease-in 0.1s;
+  padding-bottom: 0.1rem;
+}
+
+.navLink:hover,
+.navLink:focus {
+  border-bottom: 0.2rem solid var(--clr-primary-400);
+}
+
+.mainSection {
   max-width: var(--max-width-xl);
   background-color: var(--clr-primary-blend-200-5);
   min-height: 100vh;
@@ -41,47 +56,45 @@
   text-align: center;
 }
 
-.footer{
+.footer {
   background-color: var(--clr-neutral-100);
   padding: 0 2rem;
 }
 
-.footerLogo{
+.footerLogo {
   background-image: url(/src/assets/images/wheelhouse-logo-design/wheelhouse-logo-emblem-with-wording.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: .2rem;
-        padding: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.2rem;
+  padding: 2rem;
 }
 
-.footerNavigation{
-/*   max-width: var(--max-width-xl);
+.footerNavigation {
+  /*   max-width: var(--max-width-xl);
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem; */
-
 }
 
-.socialList{
+.socialList {
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin:0;
-  padding : 3rem;
+  margin: 0;
+  padding: 3rem;
 }
 
-.socialList div{
+.socialList div {
   display: flex;
   gap: 1rem;
-
 }
 
-.socialList .socialLink a{
+.socialList .socialLink a {
   text-decoration: none;
   color: var(--clr-neutral-400);
 }

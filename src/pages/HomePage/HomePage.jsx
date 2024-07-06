@@ -1,6 +1,7 @@
+import "./HomePage.css";
+
 import React from "react";
 import LoanCalculator from "../../Components/LoanCalculator/LoanCalculator";
-import "./HomePage.css";
 import CollateralImg1 from "../../assets/images/collateral-imgs/car-collateral-img.png";
 import CollateralImg2 from "../../assets/images/collateral-imgs/games-collateral-img.png";
 import CollateralImg3 from "../../assets/images/collateral-imgs/laptops-collateral-img.png";
@@ -73,9 +74,9 @@ const HomePage = () => {
           <div className="acceptableCollateralImage three">
             <img src={CollateralImg3} alt="" />
           </div>
-    <div className="acceptableCollateralImage four">
+          <div className="acceptableCollateralImage four">
             <img src={CollateralImg4} alt="" />
-          </div> 
+          </div>
           <div className="acceptableCollateralImage five">
             <img src={CollateralImg5} alt="" />
           </div>
@@ -98,12 +99,28 @@ const HomePage = () => {
                 <a href="" mailto="enquiries.wheelhouse@gmail.com">
                   <p>enquiries.wheelhouse@gmail.com</p>
                 </a>
-                <p className="officeGoogleLocation">
-                  5 Saise Road Stand B2, Longacres, Lusaka Zambia{" "}
-                </p>
+
                 <p className="phoneNumber"></p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="map-location">
+          <p className="officeGoogleLocation">
+            5 Saise Road Stand B2, Longacres, Lusaka Zambia{" "}
+          </p>
+
+          <div className="officeGoogleMap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.6537153401304!2d28.306214204038344!3d-15.410996188691472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408d006e28547b%3A0x19846cc84f5418a!2sKusafiri%20Travel%20and%20Tours!5e0!3m2!1sen!2szm!4v1720245803736!5m2!1sen!2szm"
+              /* width="600"
+                height="450" */
+              style={{ border: "0" }}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
