@@ -7,6 +7,8 @@ import OurServicesPage from "./pages/OurServicesPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import WhLogo from "../src/assets/images/wheelhouse-logo-design/wheelhouse-logo-website.png";
 
+/* ICONS */
+import { FaFacebookSquare } from "react-icons/fa";
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
       <header className="primaryHeader">
         <nav className="primaryNavigation">
           <div className="primaryNavLogo">
-            <img src={WhLogo}/>
+            <img src={WhLogo} />
           </div>
           <ul className="navList" role="list">
             {/* <li className="navItem">
@@ -54,12 +56,13 @@ function App() {
       </main>
       <footer className="footer">
         <nav className="footerNavigation">
-          <ul role="list" className="socialList">
-          <div className="footerLogo"></div>
-          <div>
-
-            <li className="socialLink"><a href="#">Facebook</a></li>
-          </div>
+            <div className="footerLogo"></div>
+          <ul role="list" className="footerSocialList">
+              <li className="footerSocialLink">
+                <a href="https://www.facebook.com/wheelhousezm?mibextid=ZbWkwL">
+                  <FaFacebookSquare className="socialLinkIcon" />
+                </a>
+              </li>
           </ul>
           {/* <ul className="footerNavList" role="list">
             <li className="footerNavItem">

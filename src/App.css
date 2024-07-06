@@ -62,7 +62,7 @@
 }
 
 .footerLogo {
-  background-image: url(/src/assets/images/wheelhouse-logo-design/wheelhouse-logo-emblem-with-wording.svg);
+  background-image: url("/src/assets/images/wheelhouse-logo-design/wheelhouse-logo-emblem-with-wording.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,16 +70,7 @@
   padding: 2rem;
 }
 
-.footerNavigation {
-  /*   max-width: var(--max-width-xl);
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem; */
-}
-
-.socialList {
+.footerSocialList {
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -89,12 +80,29 @@
   padding: 3rem;
 }
 
-.socialList div {
-  display: flex;
-  gap: 1rem;
-}
 
-.socialList .socialLink a {
+
+.footerSocialList .footerSocialLink a {
   text-decoration: none;
   color: var(--clr-neutral-400);
 }
+
+
+
+.footerNavigation{
+  display: flex;
+  padding: 2rem 1rem;
+  align-items: center;
+}
+
+.socialLinkIcon{
+  width: 2rem;
+  color: var(--clr-primary-400);
+  transition: border-bottom ease-in 0.1s;
+}
+
+.socialLinkIcon:hover{
+  border-bottom: 0.2rem solid var(--clr-primary-400);
+}
+
+
