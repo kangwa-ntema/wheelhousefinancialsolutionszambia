@@ -1,5 +1,5 @@
 import "./HomePage.css";
-
+import LoanRegistrationForm from "../../Components/LoanRegistrationForm/LoanRegistrationForm";
 import React from "react";
 import LoanCalculator from "../../Components/LoanCalculator/LoanCalculator";
 import CollateralImg1 from "../../assets/images/collateral-imgs/car-collateral-img.png";
@@ -90,6 +90,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <section className="loanFormSection">
+        <LoanRegistrationForm />
+      </section>
 
       <div className="getInTouchContainer">
         <div className="getInTouchInfoContainer">

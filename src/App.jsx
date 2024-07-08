@@ -62,7 +62,7 @@ function App() {
       <footer className="footer">
         <nav className="footerNavigation">
           <ul role="list" className="footerSocialList">
-          <div className="footerLogo"></div>
+            <div className="footerLogo"></div>
             <li className="footerSocialLink">
               <a href="https://www.facebook.com/wheelhousezm?mibextid=ZbWkwL">
                 <FaFacebookSquare className="socialLinkIcon" />
@@ -70,21 +70,21 @@ function App() {
             </li>
           </ul>
           <div className="footerGetInTouchDetails">
-                <div className="footerPhoneNumber">
-                  <a href="tel:+260771282955">
-                    <FaPhone className="footerPhoneIcon" />
-                    <span className="iconSeparator">|</span>
-                    +260 771 282 955
-                  </a>
-                </div>
-                <div className="footerEmail">
-                  <a href="mailto:enquiries.wheelhouse@gmail.com">
-                    <MdEmail className="footerEmailIcon" />
-                    <span className="iconSeparator">|</span>
-                    enquiries.wheelhouse
-                  </a>
-                </div>
-              </div>
+            <div className="footerPhoneNumber">
+              <a href="tel:+260771282955">
+                <FaPhone className="footerPhoneIcon" />
+                <span className="iconSeparator">|</span>
+                +260 771 282 955
+              </a>
+            </div>
+            <div className="footerEmail">
+              <a href="mailto:enquiries.wheelhouse@gmail.com">
+                <MdEmail className="footerEmailIcon" />
+                <span className="iconSeparator">|</span>
+                enquiries.wheelhouse
+              </a>
+            </div>
+          </div>
           {/* <ul className="footerNavList" role="list">
             <li className="footerNavItem">
               <Link className="footerNavLink" to="/">

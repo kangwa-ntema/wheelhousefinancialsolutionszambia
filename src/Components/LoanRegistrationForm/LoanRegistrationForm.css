@@ -1,0 +1,95 @@
+
+.loanForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    color: var(--clr-primary-100);
+    text-align: left;
+    gap: 1rem;
+    background-color: var(--clr-neutral-700);
+    box-shadow: .3rem .3rem 2rem .1rem var(--clr-primary-blend-100-2);
+  }
+  
+  .loanFormTitle {
+    font-size: clamp(1.5em, 2vw, 2.5em);
+    font-weight: 600;
+    text-align: center;
+    margin-block: 2rem;
+  }
+  
+  .loanForm input,
+  .loanForm textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 0.2rem solid var(--clr-primary-100);
+    background-color: transparent;
+    color: var(--clr-primary-100);
+    outline: none;
+  }
+  .loanForm input:focus,
+  .loanForm textarea:focus {
+    border-bottom: 0.2rem solid var(--clr-sec-400);
+  }
+  
+  .loanForm textarea {
+    min-height: 8rem;
+    border-top: 0.1rem solid transparent;
+  }
+  
+  .loanForm textarea:focus {
+    border-top: 0.1rem solid var(--clr-sec-400);
+  }
+  
+  .loanFormCollateralItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .loanFormCollateral {
+    margin-block: 1rem;
+  }
+  
+  .loanFormCollateralItem input {
+    width: 1rem;
+    margin-right: 1rem;
+    margin-block: 0.5rem;
+  }
+  
+  .loanPeriodParagraph{
+    font-size: 0.9em;
+  }
+  
+  .collateralDetailsInfo {
+    margin-bottom: 1rem;
+    font-size: 0.9em;
+  }
+  
+  .loanFormCollateralImg {
+    margin-block: 2rem;
+  }
+
+  .loanFormErrorMsg{
+    font-size: .7em;
+    color: hsl(0, 90%, 50%);
+    margin-top: .2rem;
+  }
+  
+  .submitLoanBtn {
+    line-height: 4;
+    cursor: pointer;
+    background-color: var(--clr-sec-400);
+    border: none;
+    border-radius: 0.2rem;
+  }
+  
+  .submitLoanBtn:hover,
+  .submitLoanBtn:focus {
+    background-color: var(--clr-sec-300);
+  }
+  
+  .VehicleCollateral {
+    margin-block: 1rem;
+  }
+  

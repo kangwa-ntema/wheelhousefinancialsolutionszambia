@@ -33,19 +33,19 @@
   background-position: top;
   background-repeat: no-repeat; */
   border-radius: 0.2rem;
-  color: var(--clr-neutral-700);
-  padding: 8rem 2rem 2rem;
+  color: var(--clr-primary-700);
+  padding: 5rem 2rem 2rem;
 }
 
 .pageHeadingTitle {
-  color: var(--clr-sec-400);
+  color: var(--clr-primary-100);
 }
 
 .pageHeadingTitle span {
 }
 
 .pageHeadingSubTitle {
-  background-color: var(--clr-sec-blend-400-8);
+  background-color: var(--clr-primary-400);
   margin-top: 3rem;
   padding: 2rem 2rem 2rem;
 }
@@ -55,21 +55,20 @@
 }
 
 .loanInterestsInfo {
-  align-self: center;
   padding: 2rem;
   font-size: clamp(1em, 1.5vw, 2em);
   max-width: 30rem;
 }
 
 .loanInterestsTitle {
-  font-size: 1em;
-  color: var(--clr-primary-400);
+  font-size: 1.8em;
+  color: var(--clr-primary-100);
 }
 
 .loanInterests {
   padding: 0;
-  font-size: 0.7em;
-  color: var(--clr-primary-200);
+  font-weight: 600;
+  color: var(--clr-primary-100);
 }
 
 .keyWordsContainer {
@@ -111,13 +110,14 @@
   justify-content: center;
   gap: 3rem;
   text-align: left;
-  background-color: var(--clr-neutral-700);
+  background-color: white;
   color: var(--clr-primary-100);
 }
 
 .loanRequirementsSubSection {
+  position: relative;
   z-index: 100;
-  background-color: rgba(204, 221, 239, 0.751);
+  background-color: var(--clr-sec-blend-700-6);
   padding: 1rem;
 }
 
@@ -191,6 +191,12 @@
 .docRequirements {
 }
 
+.loanFormSection {
+  padding-inline: 1rem;
+  background-color: var(--clr-primary-700);
+  padding: 1rem;
+}
+
 .getInTouchContainer {
   max-width: var(--max-width-xl);
   background-color: var(--clr-sec-600);
@@ -217,6 +223,7 @@
   margin-bottom: 1rem;
   font-size: clamp(2rem, 3vw, 4rem);
   color: var(--clr-primary-700);
+  text-align: left;
 }
 
 .getInTouchDetails {
@@ -227,8 +234,7 @@
   gap: 0.3rem;
 }
 
-.getInTouchDetail a{
-
+.getInTouchDetail a {
 }
 
 .phoneNumber > a,
@@ -244,20 +250,17 @@
 }
 
 .phoneNumber > a:hover,
-.email > a:hover{
+.email > a:hover {
   border-bottom: 0.2rem solid var(--clr-primary-700);
 }
 
 .phoneIcon,
-.emailIcon{
+.emailIcon {
   margin-right: 1rem;
   color: var(--clr-primary-700);
 }
 
-
-
-
-.getInTouchDetails .iconSeparator{
+.getInTouchDetails .iconSeparator {
   margin-right: 1rem;
 }
 
@@ -324,9 +327,9 @@
     margin-left: 1rem;
   }
 
-.phoneIcon {
-  color: var(--clr-primary-700);
-}
+  .phoneIcon {
+    color: var(--clr-primary-700);
+  }
 
   .getInTouchTitle,
   .getInTouchDetails > a,
