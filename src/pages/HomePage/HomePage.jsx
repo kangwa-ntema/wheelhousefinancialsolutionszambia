@@ -8,6 +8,7 @@ import CollateralImg3 from "../../assets/images/collateral-imgs/laptops-collater
 import CollateralImg4 from "../../assets/images/collateral-imgs/phone-collateral-img.png";
 import CollateralImg5 from "../../assets/images/collateral-imgs/tablet-collateral-img.png";
 import CollateralImg6 from "../../assets/images/collateral-imgs/tv-collateral-img.png";
+import MoneyImg from "../../assets/images/money9.png"
 
 /* ICONS */
 import { FaPhone } from "react-icons/fa6";
@@ -31,6 +32,15 @@ const HomePage = () => {
           </p>
         </div>
         <div className="loanInterestsInfo">
+          <div className="moneyImgContainer" >
+            <img src={MoneyImg} alt="" className="moneyImg one" />
+            <img src={MoneyImg} alt="" className="moneyImg two" />
+            <img src={MoneyImg} alt="" className="moneyImg three" />
+            <img src={MoneyImg} alt="" className="moneyImg four" />
+            <img src={MoneyImg} alt="" className="moneyImg five" />
+            <img src={MoneyImg} alt="" className="moneyImg six" />
+            <img src={MoneyImg} alt="" className="moneyImg seven" />
+          </div>
           <h1 className="loanInterestsTitle">
             Get a <span>Collateral Based Loan</span> with the best interests
             within the given periods

@@ -15,7 +15,7 @@
   left: 0;
   top: 0;
   position: absolute;
-  padding: 1rem 2.5rem;
+  padding: 1rem;
   z-index: 500;
   box-shadow: 0.1rem 0.1rem 0.7rem 0.2rem var(--clr-primary-blend-100-5);
   display: flex;
