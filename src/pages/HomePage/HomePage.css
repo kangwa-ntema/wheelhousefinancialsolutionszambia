@@ -168,7 +168,7 @@
 .loanRequirementsSubSection {
   position: relative;
   z-index: 100;
-  background-color: var(--clr-sec-blend-700-6);
+  background-color: var(--clr-primary-blend-700-6);
   padding: 1rem;
 }
 
