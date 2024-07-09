@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   padding: 12rem 0 2rem;
-  background-color: var(--clr-primary-700);
+  background-color: var(--clr-neutral-700);
   /*   background-image: url("../../assets/images/textures/photo-1533135091724-62cc5402aa20.jpeg");
   background-blend-mode: hard-light;
   background-repeat: no-repeat;
@@ -19,45 +19,49 @@
 
 @media (min-width: 700px) {
   .pageHeadingContainer {
-    padding-inline: 2rem;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
   }
 }
 
 .pageHeadingInfo {
-  /*   background-image: url("../../assets/images/hero-info-bg-img3.jpg");
+  background-image: url("../../assets/images/hero-info-bg-img4.jpg");
   background-size: cover;
   background-color: var(--clr-neutral-200);
   background-blend-mode: overlay;
-  background-position: top;
-  background-repeat: no-repeat; */
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 0.2rem;
   color: var(--clr-primary-700);
-  padding: 5rem 2rem 2rem;
+  padding: 10rem 0rem 2rem;
 }
 
 .pageHeadingTitle {
-  color: var(--clr-primary-100);
+  color: var(--clr-primary-700);
+  font-size: clamp(2em, 3vw, 4em);
 }
 
-.pageHeadingTitle span {
+.pageHeadingTitle p {
+  font-weight: bold;
+  font-weight: 800;
 }
 
 .pageHeadingSubTitle {
-  background-color: var(--clr-primary-400);
-  margin-top: 3rem;
-  padding: 2rem 2rem 2rem;
+  background-color: var(--clr-primary-blend-400-8);
 }
 
-.pageHeadingTitle {
-  font-size: clamp(2em, 3vw, 3.5em);
+.pageHeadingSubTitle div{
+  max-width: 40rem;
+  margin: 3rem auto 0;
+  padding: 2rem 1rem 2rem;
+
 }
 
 .loanInterestsInfo {
   padding: 2rem;
   font-size: clamp(1em, 1.5vw, 2em);
   max-width: 30rem;
+  text-align: left;
 }
 
 .loanInterestsTitle {
@@ -199,7 +203,7 @@
 
 .getInTouchContainer {
   max-width: var(--max-width-xl);
-  background-color: var(--clr-sec-600);
+  background-color: var(--clr-neutral-700);
   color: var(--clr-neutral-100);
 }
 
@@ -272,8 +276,8 @@
 }
 
 .officeGoogleMap {
-  padding: 1rem;
-  background-color: var(--clr-neutral-700);
+  padding: 0.5rem;
+  background-color: var(--clr-sec-400);
 }
 
 .officeGoogleMap iframe {
@@ -327,8 +331,22 @@
     margin-left: 1rem;
   }
 
-  .phoneIcon {
-    color: var(--clr-primary-700);
+  .phoneNumber a,
+  .email a{
+    color: var(--clr-primary-100);
+
+  }
+  .phoneNumber a:hover,
+  .phoneNumber a:focus,
+  .email a:hover,
+  .email a:focus {
+    color: var(--clr-primary-100);
+    border-bottom: 0.2rem solid var(--clr-primary-100);
+  }
+
+  .phoneIcon,
+  .emailIcon {
+    color: var(--clr-primary-100);
   }
 
   .getInTouchTitle,

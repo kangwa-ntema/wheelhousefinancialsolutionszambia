@@ -20,12 +20,14 @@ const HomePage = () => {
         <div className="pageHeadingInfo">
           <h1 className="pageHeadingTitle">
             Empower Your Financial Journey With{" "}
-            <span>Wheelhouse Financial Solutions</span>
+            <p>Wheelhouse Financial Solutions</p>
           </h1>
           <p className="pageHeadingSubTitle">
-            Thinking of ways to finance your plans? Whether you are bridging the
-            gap between incomes or pursuing your dreams our hassle free process
-            and competitive rates make borrowing stress-free.
+            <div>
+              Thinking of ways to finance your plans? Whether you are bridging
+              the gap between incomes or pursuing your dreams our hassle free
+              process and competitive rates make borrowing stress-free.
+            </div>
           </p>
         </div>
         <div className="loanInterestsInfo">
