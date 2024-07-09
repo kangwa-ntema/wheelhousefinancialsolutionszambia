@@ -73,8 +73,8 @@
 }
 .moneyImg{
   position: absolute;
-  width: 10rem;
-  height: 10rem;
+  width: 5rem;
+  height: 5rem;
 }
 .moneyImg.one{
   top: 22.5rem;
@@ -83,29 +83,29 @@
 
 .moneyImg.two{
   top: 20rem;
-  right: 38%;
+  right: 42%;
 }
 .moneyImg.three{
   top: 21.5rem;
   right: 23%;
 }
 .moneyImg.four{
-  top: 25rem;
-  right: 50%;
+  top: 22rem;
+  right: 55%;
 }
 .moneyImg.five{
-  top: 21.5rem;
+  top: 20.5rem;
   right: 67%;
 }
 
 .moneyImg.six{
-  top: 24rem;
-  right: 60%;
+  top: 21rem;
+  right: 80%;
 }
 
 .moneyImg.seven{
-  top: 24.5rem;
-  right: 75%;
+  top: 22.5rem;
+  right: 65%;
 }
 .loanInterestsTitle {
   font-size: 1.8em;
