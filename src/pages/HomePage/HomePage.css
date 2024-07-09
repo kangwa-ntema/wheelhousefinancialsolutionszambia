@@ -78,7 +78,7 @@
 }
 .moneyImg.one{
   top: 22.5rem;
-  right: 15%;
+  right: 25%;
 }
 
 .moneyImg.two{
@@ -87,25 +87,25 @@
 }
 .moneyImg.three{
   top: 21.5rem;
-  right: 23%;
+  right: 28%;
 }
 .moneyImg.four{
   top: 22rem;
-  right: 55%;
+  right: 45%;
 }
 .moneyImg.five{
   top: 20.5rem;
-  right: 67%;
+  right: 37%;
 }
 
 .moneyImg.six{
   top: 21rem;
-  right: 80%;
+  right: 50%;
 }
 
 .moneyImg.seven{
   top: 22.5rem;
-  right: 65%;
+  right: 35%;
 }
 .loanInterestsTitle {
   font-size: 1.8em;
@@ -323,7 +323,7 @@
 }
 
 .officeGoogleMap {
-  padding: 0.5rem;
+  padding: 0.1rem .1rem 0;
   background-color: var(--clr-sec-400);
 }
 
