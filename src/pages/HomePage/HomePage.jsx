@@ -32,7 +32,7 @@ const HomePage = () => {
           </p>
         </div>
         <div className="loanInterestsInfo">
-          <div className="moneyImgContainer" >
+          {/* <div className="moneyImgContainer" >
             <img src={MoneyImg} alt="" className="moneyImg one" />
             <img src={MoneyImg} alt="" className="moneyImg two" />
             <img src={MoneyImg} alt="" className="moneyImg three" />
@@ -40,7 +40,7 @@ const HomePage = () => {
             <img src={MoneyImg} alt="" className="moneyImg five" />
             <img src={MoneyImg} alt="" className="moneyImg six" />
             <img src={MoneyImg} alt="" className="moneyImg seven" />
-          </div>
+          </div> */}
           <h1 className="loanInterestsTitle">
             Get a <span>Collateral Based Loan</span> with the best interests
             within the given periods
