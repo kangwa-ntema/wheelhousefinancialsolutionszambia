@@ -15,13 +15,15 @@ import { MdEmail } from "react-icons/md";
 function App() {
   return (
     <div className="app">
+        <div className="primaryHeaderContainer">
       <header className="primaryHeader">
-        <nav className="primaryNavigation">
+
           <div className="primaryNavLogo">
             <Link className="navLink" to="/">
               <img src={WhLogo} />
             </Link>
           </div>
+        <nav className="primaryNavigation">
           <ul className="navList" role="list">
             <li className="navItem">
               <Link className="navLink" to="/AboutUsPage">
@@ -48,7 +50,10 @@ function App() {
               */}
           </ul>
         </nav>
+
       </header>
+      </div>
+
       <main className="mainSection">
         <Routes>
           <Route path="/" element={<HomePage />} />

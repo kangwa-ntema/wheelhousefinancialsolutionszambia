@@ -57,6 +57,35 @@
     margin-block: 0.5rem;
   }
   
+  .loanCalculations{
+    padding: 1rem;
+    border-radius: .1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--clr-neutral-600);
+  }
+
+.loanCalculationResults{
+  
+}
+
+.loanCalculationBtn{
+  cursor: pointer;
+  line-height: 3;
+  margin-block: 1rem;
+  background-color: var(--clr-sec-400);
+  text-align: center;
+  width: 20rem;
+  border-radius: .1rem;
+  border: none;
+  color: var(--clr-neutral-700);
+}
+
+.loanCalculationBtn:hover{  background-color: var(--clr-sec-300);
+
+}
+  
   .loanPeriodParagraph{
     font-size: 0.9em;
   }

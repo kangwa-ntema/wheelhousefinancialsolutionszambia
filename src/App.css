@@ -5,11 +5,8 @@
   background-repeat: repeat;
 }
 
-.primaryHeader {
-  position: relative;
-}
+.primaryHeaderContainer{
 
-.primaryNavigation {
   background-color: var(--clr-primary-100);
   right: 0;
   left: 0;
@@ -18,8 +15,18 @@
   padding: 1rem;
   z-index: 500;
   box-shadow: 0.1rem 0.1rem 0.7rem 0.2rem var(--clr-primary-blend-100-5);
+}
+
+.primaryHeader {
+  max-width: var(--max-width-xl);
+  margin-inline: auto;
+  position: relative;
   display: flex;
   justify-content: space-between;
+}
+
+.primaryNavigation {
+
 }
 
 .primaryNavLogo {

@@ -11,18 +11,28 @@ const LoanRegistrationForm = () => {
     loanFormPhoneNumber: "",
     loanFormAmount: "",
     loanFormCollateralDetails: "",
+    loanFormPeriod: "",
+    loanFormInterest: "",
+    loanFormAmountDue: ""
     /*     loanPeriod: "", */
     /*     collateralImg1: "",
     collateralImg2: "", */
   };
-  const form = useRef()
+  const form = useRef();
   const [loanFormValues, setLoanFormValues] = useState(initialFormValues);
+  const [loanAmountDue, setLoanAmountDue] = useState(0);
+  const [loanInterest, setLoanInterest] = useState(0);
   const [loanFormErrors, setLoanFormErrors] = useState({});
   const [loanFormIsSubmit, setLoanFormIsSubmit] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setLoanFormValues({ ...loanFormValues, [name]: value });
+  };
+
+  const handleClick = () => {
+      setLoanInterest(() => (Number(loanFormValues.loanFormAmount) * Number(loanFormValues.loanFormPeriod)) / 100);
+      /* setLoanAmountDue(() => parseInt(loanFormValues.loanFormAmount) + parseInt(loanInterest)); */
   };
 
   const handleSubmit = (e) => {
@@ -32,6 +42,7 @@ const LoanRegistrationForm = () => {
   };
 
   useEffect(() => {
+    handleClick()
     if (Object.keys(loanFormErrors).length === 0 && loanFormIsSubmit) {
       emailjs
         .sendForm(
@@ -60,7 +71,6 @@ const LoanRegistrationForm = () => {
     const emailRegex = /^[^s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     const phoneNumberRegexZM = /^\+260(?:9[5-7]|\d{1})[7-9]\d{7}$/;
     const nrcRegex = /^\d{6}\/\d{2}\/\d$/;
-    const numberRegex = /d+/;
 
     /* first name input validation */
     if (!values.loanFormFirstName.trim()) {
@@ -99,6 +109,11 @@ const LoanRegistrationForm = () => {
     }
 
     /* loan request amount input validation */
+    if (!values.loanFormPeriod.trim()) {
+      errors.loanFormPeriod = "loan period is required";
+    }
+
+    /* loan request amount input validation */
     if (!values.loanFormAmount.trim()) {
       errors.loanFormAmount = "loan amount is required";
     }
@@ -112,6 +127,9 @@ const LoanRegistrationForm = () => {
 
     return errors;
   };
+
+  /*   const loanAmountDue = calculateLoanAmountDue(loanFormAmount.value, loanFormPeriod.value);
+  console.log(loanAmountDue); */
 
   return (
     <>
@@ -175,16 +193,33 @@ const LoanRegistrationForm = () => {
             {loanFormErrors.loanFormPhoneNumber}
           </p>
         </label>
-        <label htmlFor="loanFormAmount">
-          <input
-            type="text"
-            name="loanFormAmount"
-            placeholder="Amount"
-            value={loanFormValues.loanFormAmount}
-            onChange={handleChange}
-          />
-          <p className="loanFormErrorMsg">{loanFormErrors.loanFormAmount}</p>
-        </label>
+        <div className="loanCalculations">
+          <label htmlFor="loanFormAmount">
+            <input
+              type="text"
+              name="loanFormAmount"
+              placeholder="Amount"
+              value={loanFormValues.loanFormAmount}
+              onChange={handleChange}
+            />
+            <p className="loanFormErrorMsg">{loanFormErrors.loanFormAmount}</p>
+          </label>
+          <label htmlFor="loanFormPeriod">
+            <select name="loanFormPeriod" id="" onChange={handleChange}>
+              <option value="">Select Period</option>
+              <option value="7.5">1 Week - 7.5%</option>
+              <option value="15">2 Weeks - 15%</option>
+              <option value="25">1 Month - 25%</option>
+            </select>
+            <p className="loanFormErrorMsg">{loanFormErrors.loanFormPeriod}</p>
+          </label>
+          <div className="loanCalculationResults">
+            <button type="button" className="loanCalculationBtn" onClick={handleClick}>Calculate</button>
+            <p className="loanFormInterest" name="loanFormInterest">Loan Interest : ZMK {loanInterest}</p>
+          {/*<p className="loanFormAmountDue" name="loanFormAmountDue">Amount Due : ZMK {loanAmountDue}</p> */}
+          </div>
+        </div>
+
         <div className="loanFormCollateral">
           <p className="collateralDetailsInfo">
             Enter Collateral Details. Including Brand name, Model number, and
@@ -202,45 +237,8 @@ const LoanRegistrationForm = () => {
             {loanFormErrors.loanFormCollateralDetails}
           </p>
         </div>
-        {/* <p className="loanPeriodParagraph">Select a loan period</p>
-        <select name="loanPeriod" id="">
-          <option value="">Loan Period</option>
-          <option value="7">1 Week - 7.5%</option>
-          <option value="14">2 Week - 15%</option>
-          <option value="30">1 Month - 25%</option>
-        </select> */}
-        <div className="loanFormCollateral">
-          {/* <div name="loanRequestCollateralList" id="">
-              <div className="loanFormCollateralItem">
-                <input type="checkbox" name="phoneCollateral" id="" />
-                <label htmlFor="phoneCollateral">Phone</label>
-              </div>
-              <div className="loanFormCollateralItem">
-                <input type="checkbox" name="laptopCollateral" id="" />
-                <label htmlFor="laptopCollateral">Laptop</label>
-              </div>
-              <div className="loanFormCollateralItem">
-                <input type="checkbox" name="tabletCollateral" id="" />
-                <label htmlFor="tabletCollateral">Tablet</label>
-              </div>
-              <div className="loanFormCollateralItem">
-                <input type="checkbox" name="TVCollateral" id="" />
-                <label htmlFor="TVCollateral">TV</label>
-              </div>
-              <div className="loanFormCollateralItem">
-                <input type="checkbox" name="videoGameCollateral" id="" />
-                <label htmlFor="videoGameCollateral">Video Game</label>
-              </div>
-              <div className="loanFormCollateralItem">
-                <input type="checkbox" name="titleDeedCollateral" id="" />
-                <label htmlFor="titleDeedCollateral">Title Deed</label>
-              </div>
-              <div className="loanFormCollateralItem">
-                <input type="checkbox" name="VehicleCollateral" id="" />
-                <label htmlFor="VehicleCollateral">Vehicle</label>
-              </div>
-            </div> */}
 
+        <div className="loanFormCollateral">
           {/* <label htmlFor="loanFormCollateralImg">
             <input
               type="file"
@@ -256,21 +254,6 @@ const LoanRegistrationForm = () => {
             />
           </label> */}
         </div>
-        {/* 
-          <label htmlFor="loanFormAmount">
-            <input type="number" name="loanFormAmount" placeholder="Amount" />
-          </label>
-          <label htmlFor="loanFormPeriod">
-            <input
-              type="number"
-              name="loanFormPhoneNumber"
-              placeholder="Period"
-            />
-          </label>
-          <button>Calculate</button>
-          <p className="loanAmountDue">Amount Due : </p>
-          <p className="loanAmountDue">Date Due : </p>
- */}
         <button className="submitLoanBtn">Submit Loan Request</button>
       </form>
     </>
