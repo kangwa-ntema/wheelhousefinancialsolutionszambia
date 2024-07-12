@@ -13,7 +13,7 @@ const LoanRegistrationForm = () => {
     loanFormCollateralDetails: "",
     loanFormPeriod: "",
     loanFormInterest: "",
-    loanFormAmountDue: ""
+ /*    loanFormAmountDue: "" */
     /*     loanPeriod: "", */
     /*     collateralImg1: "",
     collateralImg2: "", */
@@ -42,7 +42,6 @@ const LoanRegistrationForm = () => {
   };
 
   useEffect(() => {
-    handleClick()
     if (Object.keys(loanFormErrors).length === 0 && loanFormIsSubmit) {
       emailjs
         .sendForm(
